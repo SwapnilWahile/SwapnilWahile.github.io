@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swapnil Wahile - Portfolio</title>
+  <style>
+    :root {
+      --primary: #007acc;
+      --secondary: #f5f5f5;
+      --dark: #333;
+      --light: #fff;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: var(--secondary);
+      color: var(--dark);
+    }
+    header {
+      background: var(--primary);
+      color: var(--light);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    header nav a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .skills, .soft-skills, .certs, .awards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .experience, .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .card {
+      background: var(--light);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--primary);
+      color: var(--light);
+    }
+    a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--primary);
+      color: var(--light);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    a.btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm <strong>Swapnil R. Wahile</strong>, a Software Engineer from Pune, India with a passion for building modern, efficient web applications. I specialize in ReactJS and front-end technologies, always eager to learn and take on new challenges.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience">
+    <div class="card">
+      <h3>Software Engineer Level II</h3>
+      <p><strong>Vmedulife Software, Pune</strong><br>Nov 2024 - Present</p>
+      <ul>
+        <li>Developed ERP-based campus management solutions with payment integrations (Razorpay).</li>
+        <li>Focused on dynamic report generation, feature delivery per release.</li>
+        <li><strong>Tech:</strong> ReactJS, JavaScript, React Router, Bootstrap, CSS, REST APIs</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Jr. Software Engineer</h3>
+      <p><strong>NityaObject Software Services, Pune</strong><br>Jul 2023 - Oct 2024</p>
+      <ul>
+        <li>Built health service web app managing appointments, reports, payments.</li>
+        <li>Developed event management app with interactive UIs for events, vendors, guests.</li>
+        <li><strong>Tech:</strong> ReactJS, JavaScript, React Router, Bootstrap, CSS, REST APIs</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Software Engineer Intern</h3>
+      <p><strong>NityaObject Software Services, Pune</strong><br>Feb 2023 - Jun 2023</p>
+      <ul>
+        <li>Built reusable React components, integrated REST APIs, tested endpoints with Postman.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Health Service Web App</h3>
+      <p>React-based app for scheduling appointments, managing patient data, and tracking payments for consultants and patients.</p>
+    </div>
+    <div class="card">
+      <h3>Event Management App</h3>
+      <p>Web platform to schedule and manage events, activities, vendors, and guests with interactive dashboards.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid skills">
+    <div>ReactJS</div><div>JavaScript</div><div>Redux</div><div>HTML</div><div>CSS</div><div>Bootstrap</div>
+    <div>Axios</div><div>REST APIs</div><div>GitHub</div><div>JIRA</div><div>Postman</div><div>Linux</div>
+    <div>Unit Testing</div><div>Performance Optimization</div><div>State Management</div><div>Responsive Design</div><div>MUI</div>
+  </div>
+  <h3>Soft Skills</h3>
+  <div class="grid soft-skills">
+    <div>Problem Solving</div><div>Critical Thinking</div><div>Teamwork</div><div>Communication</div><div>Adaptability</div><div>Eagerness to Learn</div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <div class="grid certs">
+    <div>Data Structures - UC San Diego (Coursera)</div>
+    <div>Oracle Autonomous DB Specialist</div>
+    <div>Oracle Cloud Foundations Associate</div>
+  </div>
+</section>
+
+<section id="awards">
+  <h2>Awards</h2>
+  <div class="grid awards">
+    <div>Emerging Star Award for outstanding contributions and dedication</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:swapnilwahile24@gmail.com">swapnilwahile24@gmail.com</a><br>
+     Phone: <a href="tel:+917350063400">(+91) 7350063400</a><br>
+     GitHub: <a href="https://github.com/SwapnilWahile" target="_blank">github.com/SwapnilWahile</a><br>
+     LinkedIn: <a href="https://www.linkedin.com/in/swapnil-wahile-752a48220" target="_blank">linkedin.com/in/swapnil-wahile</a>
+  </p>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>You can download my full resume below:</p>
+  <a class="btn" href="/swapnil wahile resume_.pdf" download>Download Resume</a>
+</section>
+
+<footer>
+  &copy; 2025 Swapnil Wahile
+</footer>
+
+<script>
+  // Smooth scroll fallback for browsers that don't support CSS smooth scroll
+  document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
