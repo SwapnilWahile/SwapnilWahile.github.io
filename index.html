@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -22,18 +24,18 @@
             <span></span>
           </div>
           <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
+            <a href="#about" data-aos="fade-down" data-aos-delay="100">About</a>
+            <a href="#experience" data-aos="fade-down" data-aos-delay="200">Experience</a>
             <!-- <a href="#projects">Projects</a> -->
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
+            <a href="#skills" data-aos="fade-down" data-aos-delay="300">Skills</a>
+            <a href="#contact" data-aos="fade-down" data-aos-delay="400">Contact</a>
+            <a href="#resume" data-aos="fade-down" data-aos-delay="500">Resume</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <section id="about">
+    <section id="about" data-aos="fade-down">
       <h2>About Me</h2>
       <div class="about-container">
         <div class="about-text">
@@ -60,11 +62,11 @@
             optimization.
           </p>
         </div>
-        <img src="my-photo.png" alt="Swapnil Wahile" class="about-photo" />
+        <img data-aos="flip-up" src="my-photo.png" alt="Swapnil Wahile" class="about-photo" />
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience"  data-aos="fade-up">
       <h2>Experience</h2>
       <div class="experience">
         <div class="card">
@@ -104,7 +106,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card"  data-aos="fade-up">
           <h3>Jr. Software Engineer</h3>
           <p>
             <strong>NityaObject Software Services, Pune</strong><br />Jul 2023 -
@@ -142,7 +144,7 @@
           </p>
         </div>
 
-        <div class="card">
+        <div class="card"  data-aos="fade-up">
           <h3>Software Engineer Intern</h3>
           <p>
             <strong>NityaObject Software Services, Pune</strong><br />Feb 2023 -
@@ -164,7 +166,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
       <div class="projects">
         <div class="card">
@@ -222,7 +224,7 @@
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills"  data-aos="fade-up">
       <h2>Skills</h2>
       <h3>Languages & Frameworks:</h3>
       <div class="grid soft-skills">
@@ -270,7 +272,7 @@
       </div>
     </section>
 
-    <section id="certs">
+    <section id="certs"  data-aos="fade-up">
       <h2>Certifications</h2>
       <div class="grid certs">
         <div class="card">
@@ -319,7 +321,7 @@
       </div>
     </section>
 
-    <section id="awards">
+    <section id="awards"  data-aos="fade-up">
       <h2>Awards</h2>
       <div class="grid awards">
         <div>
@@ -331,7 +333,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact"  data-aos="fade-up">
       <h2>Contact</h2>
       <p>
         <i class="fas fa-envelope"></i>
@@ -358,7 +360,7 @@
       </p>
     </section>
 
-    <section id="resume">
+    <section id="resume"  data-aos="fade-up">
       <h2>Resume</h2>
       <p>You can view my full resume below:</p>
       <a class="btn" href="swapnil wahile resume_.pdf" target="_blank"
@@ -366,7 +368,7 @@
       ></a>
     </section>
 
-    <section id="get-in-touch">
+    <section id="get-in-touch"  data-aos="fade-up">
       <h2>Get In Touch</h2>
       <p>
         My inbox is always open for discussing frontend engineering roles,
@@ -382,5 +384,13 @@
     <footer>&copy; 2025 Swapnil Wahile</footer>
 
     <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration in ms
+        once: true, // Animate only once
+      });
+    </script>
   </body>
 </html>
