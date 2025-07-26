@@ -28,3 +28,24 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     navLinks.classList.remove("active");
   });
 });
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("page-loader");
+
+  // Keep loader for 5 seconds
+  setTimeout(() => {
+    loader.style.opacity = "0";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+
+      // Initialize AOS after loader finishes
+      AOS.init({
+        duration: 800,
+        once: false,
+      });
+
+    }, 500); // match fade-out time
+
+  }, 1500); // loader visible for 5 sec
+});
