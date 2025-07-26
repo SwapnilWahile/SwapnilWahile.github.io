@@ -49,3 +49,5 @@ window.addEventListener("load", () => {
 
   }, 1500); // loader visible for 5 sec
 });
+
+
