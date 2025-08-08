@@ -1,18 +1,17 @@
 document.querySelectorAll("header nav a").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    document
-      .querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
+    const target = document.querySelector(this.getAttribute("href"));
+    const navHeight = document.querySelector("header").offsetHeight;
+
+    window.scrollTo({
+      top: target.offsetTop - navHeight - 10,
+      behavior: "smooth"
+    });
   });
 });
 
-// const menuToggle = document.getElementById("mobile-menu");
-// const navLinks = document.querySelector(".nav-links");
 
-// menuToggle.addEventListener("click", () => {
-//   navLinks.classList.toggle("active");
-// });
 
 const menuToggle = document.getElementById("mobile-menu");
 const navLinks = document.querySelector(".nav-links");
